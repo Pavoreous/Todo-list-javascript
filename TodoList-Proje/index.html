@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Todo List</title>
+</head>
+
+<body>
+
+    <div class="container   " style="margin-top:20px">
+        <div class="card row">
+            <div class="card-header">Todo List</div>
+            <div class="card-body">
+                <form name="form" class="todo-form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6 mx-auto">
+                            <input type="text" name="todo" class="form-control" placeholder="Bir Todo Girin" id="todo">
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    
+                    <button type="submit" class="btn btn-danger mx-auto d-flex" id="add-todos">Todo Ekle</button>
+                    <!-- btn btn-danger  mx-auto d-flex butonu ortalamak için kullanılabilir yada div arasına yazılıp kullanıla bilir
+                     <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-dark" id="clear-todos">Tüm Taskları Temizleyin</a>
+                    </div> -->
+                </form>
+                <hr>
+                
+               
+            </div>
+
+            
+            <div class="card-body">
+                <hr>
+                <h5 class="card-title" id="task-title">Todolar</h5>
+                <div class="form-row">
+                    <div class="form-group col-md-6 mx-auto">
+                        <input type="text" class="form-control" id="filtre" name="filtre" placeholder="Bir Todo girin">
+                    </div>
+                </div>
+                <hr>
+                <ul class="list-group">
+
+
+
+                </ul>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="btn btn-dark" id="clear-todos">Tüm Taskları Temizleyin</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="todo.js"></script>
+</body>
+
+</html>
